@@ -2,13 +2,76 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>AB Testing Writeup</title>
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6">
+  				<h1 class="paddings">Interface A</h1>
+  				<img class="interface" src="interfaceA.PNG" />
+  			</div>
+  			<div class="col-md-6">
+  				<h1 class="paddings">Interface B</h1>
+  				<img class="interface" src="interfaceB.PNG" />
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="hypotheses">
+  				<h1>Null and Alternative Hypotheses</h1>
+  				<p>To measure whether or not there is a difference between the two interfaces on Time to Completion and Return Rate, we must first define what we are measuring as well as formulate null and alternative hypotheses. Null Hypotheses, or the hypothesis that there is no difference between the interface, must be negated through the data in order to show a difference. The Alternative Hypotheses would then be shown to be true.</p>
+  				<h3>Time to Completion and Return Rate Defined</h3>
+  				<p><b>Time to Completion:</b> From when a user starts interacting with the page to the point they make their last item. A user's data is only taken into account if they complete the task (order at least $150 of cacti)</p>
+  				<br>
+  				<p><b>Return Rate:</b> If a user returns from the cart back to the main page any number of times, they are tallied as a user who returned or "Return". If they did not return, they they are tallied a user who did not return or "No Return"</p>
+  				<br>
+  				<h4>Null Hypotheses</h4>
+  				<ul>
+  					<li>There is no difference between interface A and interface B in user <b>Time to Completion</b></li>
+  					<li>There is no difference between interface A and interface B in user <b>Return Rate</b></li>
+  				</ul>
+  				<h4>Alternative Hypotheses</h4>
+  				<ul>
+  					<li>There exists a statistically significant difference between interface A and B in user <b>Time to Completion</b></li>
+  					<li>There exists a statistically significant difference between interface A and B in user <b>Return Rate</b></li>
+  				</ul>
+  				<h5>Reasoning for Alternative Hypotheses</h5>
+  				<p>Interface A has less color contrast than interface B. The cart in interface A is positioned in the certer whereas it is tucked to the side in interface B. The items in interface A are also more spread out than in interface B. Any of these can create a difference in how the user interacts with each.</p>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-12 infographic">
+  				<h1 class="paddings">Performance and Data Analysis</h1>
+  				<img class="interface" src="infographic.png" /> 
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h1 class="paddings">Conclusions and Takeaways</h1>
+  			</div>
+  			<h3>A Performed Better on Time to Completion</h3>
+  			<p>There was a statistically significant difference which showed A to perform better than B on <b>Time to Completion.</b> The null hypothesis was rejected.</p>
+  			<h3>There was no significant difference in Return Rate</h3>
+  			<p>There was no statistically significant difference between A or B in return rates and the null hypothesis was not rejected. 
+  			<h5>A Overall is a Better Interface</h5>
+  		</div>
+  		<div class="row">
+  			<h2>Broad Takeaways</h2>
+  			<ul>
+  				<li>The sample size was relatively small and there were a few outliers where people spent a large amount of time on both interfaces which may have skewed the data.</li>
+  				<li>The test seemed to show that spacing out items and having fewer perceived items (interface B had more deliniation between the different interface items) seemed to yield better results</li>
+  				<li>There were a number of people who refreshed the page multiple times and interacted with both interfaces, but didn't complete the tasks. There may have been some behavior that wasn't adequately captured by the tests</li>
+  				<li>A/B Testing seemed to be a pretty effective way of making objective assessments about interfaces even on limited data and are worth doing</li>
+  			</ul>
+  		</div>
+  		<div class="row">
+  		</div>
+  	</div>
     <!-- TODO: put your HTML code here! -->
   </body>
 </html>

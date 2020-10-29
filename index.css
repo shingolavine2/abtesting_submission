@@ -1,1 +1,10 @@
 /* Put your style information here! */
+.interface {
+	width: 85%;
+}
+.paddings {
+	padding: 1rem;
+}
+.hypotheses {
+	padding: 1rem;
+}
